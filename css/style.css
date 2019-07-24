@@ -8,28 +8,28 @@
 00. Helper CSS
 *****************************/
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap");
-.features-area, .bedrooms-gallery-area, .sidebar-widget-bg {
+.features-area, .bedrooms-gallery-area {
   padding: 60px 0; }
 
 .owl-dots div, .owl-nav div {
   border-radius: 50%; }
 
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea, .parallax-area .parallax-text {
   border-radius: 5px; }
 
-.menu-bars span, .single-feature-item {
+.menu-bars span, .hero-wrap .main-content-scroll, .single-feature-item {
   display: block; }
 
 .owl-nav div, .social-icons a {
   display: inline-block; }
 
-.section-title-2, .boxed-btn, .single-feature-item, .single-bedroom-item, .fluid-width-video-wrapper {
+.section-title-2, .boxed-btn, .hero-wrap, .single-feature-item, .single-bedroom-item, .fluid-width-video-wrapper {
   position: relative; }
 
-.section-title-2:after, .owl-nav div, .menu-bars, .single-feature-item:after, .single-feature-item span, .bedroom-text, .fluid-width-video-wrapper iframe {
+.section-title-2:after, .owl-nav div, .menu-bars, .hero-wrap .main-content-scroll, .single-feature-item:after, .single-feature-item span, .bedroom-text, .fluid-width-video-wrapper iframe {
   position: absolute; }
 
-.parallax-area, .sidebar-widget-bg {
+.parallax-area {
   background-size: cover;
   background-position: center;
   background-color: #ddd; }
@@ -67,13 +67,13 @@ a, button, img, input, span, .owl-nav div, .boxed-btn:after, .single-feature-ite
 h1, h2, h3, h4, h5, h6, .section-subtitle {
   text-transform: uppercase; }
 
-.single-feature-item:after, .fluid-width-video-wrapper, .fluid-width-video-wrapper iframe {
+.parallax-area .parallax-text, .single-feature-item:after, .fluid-width-video-wrapper, .fluid-width-video-wrapper iframe {
   width: 100%; }
 
 .single-feature-item:after, .fluid-width-video-wrapper iframe {
   height: 100%; }
 
-.owl-nav div, .menu-bars, .single-feature-item span, .bedroom-text {
+.owl-nav div, .menu-bars, .hero-wrap .main-content-scroll, .parallax-area .parallax-text, .single-feature-item span, .bedroom-text {
   text-align: center; }
 
 .boxed-btn {
@@ -367,35 +367,28 @@ select {
 .menu-bars span, .boxed-btn:after {
   background-color: #00A1AD; }
 
-.section-title-1, .section-subtitle, .boxed-btn:hover, .single-feature-item span, .bedroom-text h3, .bedroom-text .boxed-btn {
+.section-title-1, .section-subtitle, .boxed-btn:hover, .hero-wrap .main-content-scroll, .single-feature-item span, .bedroom-text h3, .bedroom-text .boxed-btn {
   color: #ffffff; }
 
 .bedroom-text .boxed-btn {
   background-color: #ffffff; }
 
-.section-title-2 {
+.section-title-2, .welcome-text-area .welcome-text h3 {
   color: #000000; }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-moz-placeholder, textarea:-moz-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, .boxed-btn, .parallax-area.black-text .section-title-1, .parallax-area.black-text .section-subtitle, .social-icons a {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-moz-placeholder, textarea:-moz-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, .boxed-btn, .welcome-text-area .welcome-text h4, .parallax-area.black-text .section-title-1, .parallax-area.black-text .section-subtitle, .social-icons a {
   color: #2c2c2c; }
 
 /*================Home Page CSS===============*/
-.hero-wrap {
-  position: relative; }
-
 .hero-wrap .main-content-scroll {
-  position: absolute;
   left: 0;
   bottom: 25px;
   right: 0;
-  color: #fff;
   font-size: 50px;
-  display: block;
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  line-height: 50px;
-  text-align: center; }
+  line-height: 50px; }
   @media (max-width: 767px) {
     .hero-wrap .main-content-scroll {
       display: none; } }
@@ -405,13 +398,11 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-mo
   padding: 45px 0 60px; }
   .welcome-text-area .welcome-text h3 {
     font-size: 24px;
-    color: #000000;
     letter-spacing: 0.14em; }
     @media (max-width: 767px) {
       .welcome-text-area .welcome-text h3 {
         font-size: 20px; } }
   .welcome-text-area .welcome-text h4 {
-    color: #2c2c2c;
     font-size: 16px;
     margin-bottom: 40px;
     letter-spacing: 0.3em; }
@@ -428,18 +419,15 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-mo
       padding-bottom: 15px; } }
   @media (max-width: 767px) {
     .parallax-area {
-      height: 450px; } }
+      height: 500px; } }
   @media (min-width: 1200px) {
     .parallax-area {
       background-size: contain;
       background-repeat: no-repeat; } }
   .parallax-area .parallax-text {
-    text-align: center;
     background-color: rgba(55, 23, 8, 0.6);
-    border-radius: 5px;
     border: 1px #413e3e solid;
-    padding: 10px;
-    width: 100%; }
+    padding: 10px; }
     .parallax-area .parallax-text h4 {
       margin: 0; }
 
@@ -550,41 +538,5 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-mo
 .fluid-width-video-wrapper iframe {
   left: 0;
   top: 0; }
-
-/*===========amenities CSS=============*/
-.hero-bg.less-height {
-  height: 370px; }
-
-.hero-text {
-  padding-top: 200px; }
-
-.sidebar .sidebar-widget {
-  border: 1px solid #D7D7D7;
-  padding: 50px 20px;
-  margin-bottom: 40px; }
-
-.sidebar h3 {
-  color: inherit;
-  margin: 0 0 8px;
-  font-size: 24px; }
-
-.sidebar-widget-text h3 {
-  font-size: 18px;
-  line-height: normal;
-  margin: 0 0 20px;
-  color: #828282;
-  letter-spacing: 0.14em; }
-
-.entry-content .boxed-btn {
-  margin-top: 10px; }
-
-.entry-content .boxed-btn {
-  margin-top: 10px; }
-
-.entry-content a:hover {
-  color: red; }
-
-.entry-content .boxed-btn:hover {
-  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
