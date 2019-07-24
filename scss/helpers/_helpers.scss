@@ -1,0 +1,125 @@
+/*****************************
+00. Helper CSS
+*****************************/
+
+%sectionpadding{
+	padding: 60px 0;
+}
+%borderradius50{
+	border-radius: 50%;
+}
+%borderradius50px{
+	border-radius: 50px;
+}
+%borderradius5{
+	border-radius: 5px;
+}
+%borderradius0{
+	border-radius: 0px;
+}
+%margin0auto{
+	margin: 0 auto;
+	display: block;
+}
+%displayblock{
+	display: block;
+}
+%displayinline{
+	display: inline-block;
+}
+%dtablecell{
+	display: table-cell;
+}
+%posrelative{
+	position: relative;
+}
+%posabsolute{
+	position: absolute;
+}
+%backgroundimage{
+	background-size: cover;
+	background-position: center;
+	background-color: #ddd;
+}
+%pseudoabsolute{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+%zindex2{
+	z-index: 2;
+}
+%pseudo{
+	position: absolute;
+	content: "";
+}
+%basetransition{
+	@include transition(all .3s ease);
+}
+// %absCenter{
+// 	left: 50%;
+// 	top: 50%;
+// 	@include transform(translate(-50%, -50%));
+// }
+%invisible{
+	visibility: hidden;
+	opacity: 0;
+}
+%visible{
+	visibility: visible;
+	opacity: 1;
+}
+%opacity7{
+	opacity: 0.7;
+}
+%inlineblock{
+	display: inline-block;
+}
+%uppercase{
+	text-transform: uppercase;
+}
+%w100{
+	width: 100%;
+}
+%h100{
+	height: 100%;
+}
+%overflowhidden{
+	overflow: hidden;
+}
+%textleft{
+	text-align: left;
+}
+%textcenter{
+	text-align: center;
+}
+%textright{
+	text-align: right;
+}
+
+
+// Fonts
+%body-font{
+	font-family: $body-font;
+}
+
+
+%roundicon{
+	border-radius: 50%;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	display: inline-block;
+}
+
+
+%fontAwesome{
+	position: absolute;
+	font-family: fontAwesome;
+	line-height: 1;
+}
+

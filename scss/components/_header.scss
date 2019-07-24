@@ -1,0 +1,31 @@
+/*=============== Header CSS ==================*/
+.menu-bars {
+    @extend %posabsolute;
+    right: 15px;
+    top: 43px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $primary-color;
+    @extend %textcenter;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 8px;
+}
+.menu-bars span {
+    width: 20px;
+    height: 3px;
+    @extend %primary-bg-color;
+    @extend %displayblock;
+    margin: 3px 0;
+}
+.site-logo img {
+    max-width: 170px;
+    @include all-below-mobile-lg{
+        max-width: 130px;
+    }
+}
+.site-logo {
+    padding: 10px 0;
+}
+
+

@@ -1,0 +1,31 @@
+/*============== Footer CSS ================*/
+.footer-area {
+    background-color: #252525;
+    color: #aeaeae;
+    text-transform: uppercase;
+    padding: 12px 0;
+    font-size: 11px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    .text-right{
+        @include all-below-med{
+            text-align: center !important;
+            margin-top: 5px;
+        }
+    }
+    &.text{
+        @include all-below-med{
+            text-align: center;
+        }
+    }
+}
+.footer-area p {
+    margin: 0;
+}
+.footer-area a {
+    color: #9e8927;
+    margin-left: 5px;
+}
+.footer-area a:hover {
+    color: #c7ac31;
+}

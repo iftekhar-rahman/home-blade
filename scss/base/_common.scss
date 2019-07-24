@@ -1,0 +1,216 @@
+/*==============Common CSS===================*/
+
+body {
+    font-family: $body-font;
+    font-size: $body-font-size;
+    color: $body-color;
+    line-height: 1.875;
+}
+h1, h2, h3, h4, h5, h6 {
+    @extend %uppercase;
+    line-height: normal;
+    margin: 0 0 20px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    color: #828282;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+p {
+    margin: 0 0 25px;
+    &:last-child{
+    	margin-bottom: 0;
+    }
+}
+a, button, img, input, span {
+    @extend %basetransition; 
+}
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+    @extend %borderradius5;
+    height: 50px;
+    padding: 8px 20px;
+}
+.form-group {
+    margin-bottom: 25px;
+    .form-control{
+        &:focus {
+            box-shadow: none;
+            border-color: #2a7d2e;
+        }
+        &:hover {
+            border-color: #2a7d2e;
+        }
+    }
+}
+input[type=submit], button[type=submit]{
+    cursor: pointer;
+}
+input, textarea{
+	@include placeholder{
+		@extend %body-color;
+	}
+}
+textarea {
+    height: 150px;
+    @extend %borderradius5;;
+    padding: 10px 20px;
+    width: 100%;
+    // margin-bottom: -7px;
+    border-color: #ced4da;
+    transition: all .3s ease;
+    &:focus {
+        border-color: #2a7d2e;
+    }
+    &:hover {
+        border-color: #2a7d2e;
+    }
+}
+
+/*========.section-title=========*/ 
+.section-title-1 {
+    font-size: 36px;
+    letter-spacing: 0.28em;
+    margin: 0 0 5px;
+    padding: 0;
+    @extend %white-color;
+    @include all-below-mobile-lg{
+        font-size: 26px;
+        letter-spacing: 0.18em;
+    }
+}
+.section-title-2 {
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    @extend %posrelative;
+    padding: 0 0 18px;
+    margin: 0 0 32px;
+    @extend %black-color;
+}
+.section-title-2:after {
+    @extend %posabsolute;
+    width: 90px;
+    height: 1px;
+    background-color: #828282;
+    content: "";
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.section-subtitle {
+    @extend %uppercase;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: normal;
+    letter-spacing: 0.3em;
+    @extend %white-color;
+}
+
+/*======.owl-dots customization=======*/
+.owl-dots div {
+    height: 5px;
+    width: 5px;
+    background-color: #BBBBBB;
+    @extend %inlineblock;
+    margin: 0 5px;
+    @extend %borderradius50;
+}
+.owl-dots {
+    text-align: center;
+}
+.owl-dots div.active {
+    background-color: #0DA0F4;
+}
+
+/*=====owl nav customization======*/
+.owl-nav div {
+    @extend %displayinline;
+    @extend %posabsolute;
+    left: -10px;
+    top: 50%;
+    color: #2A7D2E;
+    background-color: #fff;
+    line-height: 60px;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    font-size: 45px;
+    padding-right: 5px;
+    @extend %borderradius50;
+    @extend %textcenter;
+    @extend %basetransition;
+    &.owl-next {
+        left: auto;
+        right: -10px;
+        padding-left: 5px;
+        padding-right: 0;
+    }
+    &:hover {
+        color: #ffffff;
+        background-color: #2A7D2E;
+    }
+}
+
+select {
+    font-size: 19px;
+    color: #0da0f4;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 8px 10px;
+}
+
+/*========.nice-select=============*/ 
+.nice-select {
+    width: 100%;
+    border-radius: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-color:  #ced4da;
+    .list {
+        width: 100%;
+        box-shadow: none;
+        border: 1px solid #ced4da;
+    }
+    &:focus {
+        border-color: #154D32;
+    }
+    &:hover {
+        border-color: #154D32;
+    }
+    &:after{
+        right: 25px;
+        border-color: #ced4da;
+        width: 10px;
+        height: 10px;
+        margin-top: -6px;
+    }
+    &:hover:after {
+        border-color: #2A7D2E;
+    }
+}
+
+
+.text-lg {
+    font-size: 18px;
+    line-height: 1.66667;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

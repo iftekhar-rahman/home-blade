@@ -1,0 +1,202 @@
+/*================Home Page CSS===============*/
+.hero-wrap {
+    position: relative;
+}
+.hero-wrap .main-content-scroll {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    right: 0;
+    color: #fff;
+    font-size: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    @include all-below-mobile-lg{
+        display: none;
+    }
+}
+/*======.welcome-text-area =====*/ 
+.welcome-text-area {
+    padding: 45px 0 60px;
+    .welcome-text h3 {
+        font-size: 24px;
+        color: #000000;
+        letter-spacing: 0.14em;
+        @include all-below-mobile-lg{
+            font-size: 20px;
+        }
+    }
+    .welcome-text h4 {
+        color: #2c2c2c;
+        font-size: 16px;
+        margin-bottom: 40px;
+        letter-spacing: 0.3em;
+    }
+}
+
+/*======parallax-area========*/ 
+.parallax-area{
+    @extend %backgroundimage;
+    height: 610px;
+    background-attachment: fixed;
+    @include all-below-mobile-lg{
+        height: 450px;
+    }
+    .parallax-text{
+        text-align: center;
+        background-color: rgba(55, 23, 8, 0.6);
+        border-radius: 5px;
+        border: 1px #413e3e solid;
+        padding: 10px;
+        width: 100%;
+        h4{
+            margin: 0;
+        }
+    }
+}
+.parallax-area.less-width {
+    height: 550px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.parallax-area.black-text .section-title-1, .parallax-area.black-text .section-subtitle {
+    @extend %body-color;
+}
+
+/*=====.features-area=======*/ 
+.features-area{
+    @extend %sectionpadding;
+}
+.features-gallery {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.features-gallery .col-md-6, .features-gallery .col-md-4  {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+.single-feature-item {
+    @extend %posrelative;
+}
+.single-feature-item:after {
+    @extend %posabsolute;
+    left: 0;
+    top: 0;
+    @extend %w100;
+    @extend %h100;
+    border: 0px solid $color-white;
+    content: "";
+    @extend %basetransition;
+}
+.single-feature-item span {
+    @extend %posabsolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    @extend %white-color;
+    @extend %textcenter;
+    font-size: 22px;
+    margin-top: -15px;
+    line-height: 33px;
+    @extend %invisible;
+    @extend %basetransition;
+}
+.single-feature-item:hover:after {
+    border-width: 20px;
+}
+.single-feature-item:hover span {
+    @extend %visible;
+}
+.single-feature-item:hover {
+    border: 1px solid #D7D7D7;
+}
+.single-feature-item {
+    @extend %displayblock;
+    border: 1px solid transparent;
+}
+
+/*=====bedrooms-gallery-area=======*/
+.bedrooms-gallery-area{
+    @extend %sectionpadding;
+}
+.single-bedroom-item {
+    @extend %posrelative;
+    margin-bottom: 30px;
+}
+.bedroom-text {
+    @extend %posabsolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    @extend %textcenter;
+    transform: translateY(-50%);
+    padding: 30px;
+    @extend %zindex2;
+}
+.bedroom-text h3 {
+    @extend %white-color;
+    font-size: 16px;
+    line-height: 28px;
+}
+.bedroom-text .boxed-btn {
+    @extend %white-color;
+    @extend %white-bg-color;
+    margin: 0;
+}
+
+/*======contact-info-area=======*/ 
+.contact-info-area{
+    padding: 0 0 90px;
+}
+.contact-info {
+    line-height: 30px;
+}
+.social-icons {
+    margin-top: 80px;
+}
+.social-icons a {
+    @extend %displayinline;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $body-color;
+    line-height: 37px;
+    font-size: 20px;
+    @extend %body-color;
+    opacity: .5;
+    margin: 0 3px;
+    color: #2c2c2c;
+}
+.social-icons a:hover {
+    opacity: 1;
+}
+.contact-info a:hover {
+    @extend %primary-color;
+}
+
+
+/*====instagram-gallery-area=====*/ 
+.instagram-gallery ul li{
+    width: 135px;
+}
+
+/*=====.fluid-width-video-wrapper======*/ 
+.fluid-width-video-wrapper {
+    @extend %posrelative;
+    @extend %w100;
+    padding: 0;
+}
+.fluid-width-video-wrapper iframe {
+    @extend %posabsolute;
+    left: 0;
+    top: 0;
+    @extend %w100;
+    @extend %h100;
+}
