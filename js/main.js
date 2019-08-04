@@ -16,6 +16,12 @@ jQuery(document).ready(function($){
         } // End if
     });
 
+    $(document).ready(function () {
+        $('.second-button').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+        });
+    });
+
     
 
 });
